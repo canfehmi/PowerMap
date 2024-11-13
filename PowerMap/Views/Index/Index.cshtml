@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @await Component.InvokeAsync("_MetaComponentPartial")
+</head>
+
+<body class="index-page">
+
+    @await Component.InvokeAsync("_HeaderComponentPartial")
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        @await Component.InvokeAsync("_BannerComponentPartial")
+        <!-- About Section -->
+        @await Component.InvokeAsync("_AboutComponentPartial")
+        <!-- /About Section -->
+        <!-- Services Section -->
+        @await Component.InvokeAsync("_ServicesComponentPartial")
+        <!-- /Services Section -->
+        <!-- Faq Section -->
+        @await Component.InvokeAsync("_FaqComponentPartial")
+        <!-- /Faq Section -->
+        <!-- Portfolio Section -->
+        @await Component.InvokeAsync("_PortfolioComponentPartial")
+        <!-- /Portfolio Section -->
+        <!-- Testimonials Section -->
+        @await Component.InvokeAsync("_TestimonialsComponentPartial")
+        <!-- /Testimonials Section -->
+        <!-- Clients Section -->
+        @await Component.InvokeAsync("_ClientsComponentPartial")
+        <!-- /Clients Section -->
+        <!-- Contact Section -->
+        @await Component.InvokeAsync("_ContactComponentPartial")
+        <!-- /Contact Section -->
+
+    </main>
+
+    @await Component.InvokeAsync("_FooterComponentPartial")
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    @await Component.InvokeAsync("_ScriptsComponentPartial")
+
+</body>
+
+</html>
